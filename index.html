@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="C:\Users\PC\TOP\google-homepage-\style.css" rel="stylesheet" text="text/css">
+    <title>Google</title>
+    <style>
+html {
+    height: 100%;
+    min-height: 100%;
+}
+/*Navbar_section*/
+#navbar {
+    margin-right: 10px;
+    display: grid;
+    position: relative;
+    grid-template-columns: 60px 60px 1fr 60px 60px 60px 60px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "about store . gmail images menu sign-in";
+    
+}
+a p {
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+    vertical-align: middle;
+    line-height: 27px;
+    
+}
+a:hover {
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+#about {
+    grid-area: about;
+    align-self: center;
+    justify-self: center;
+}
+#store {
+    grid-area: store;
+    align-self: center;
+    justify-self: center;
+}
+#gmail {
+    grid-area: gmail;
+    align-self: center;
+    justify-self: center;
+}
+#images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+#menu {
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+    margin-top: 6px;
+    margin-right: 7px;
+}
+#sign-in {
+    cursor:pointer;
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
+    background: #4484f1;
+    padding: 6pxs;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 11%;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    height: 30px;
+    width: 63px;
+}
+
+/*Main_section*/
+#main { 
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 100px 90px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ." 
+    ". flexbox .";
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+    height: 100px;  
+}
+#search {
+    grid-area: search;  
+    height: 40px;  
+    width: 100%;
+    align-self: center;
+    border: 1px solid rgb(0, 0, 0, 0.151);
+    border-radius: 30px;  
+}
+#search:hover {
+    box-shadow: 1px 1px 3px grey;
+}
+input {
+    text-align: center;
+    color:#84888f
+}
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: top;
+    font-family: arial,sans-serif;  
+
+}
+#google-search {
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    width: 140px;
+    font-size: 13px;
+    font-family: arial,sans-serif; 
+    font-stretch:100%;
+    color: #5F6368;
+    margin: 8px 7px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    text-align: center;
+    cursor: default;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#google-search:hover {
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 4px;
+}
+#ramdon-search {
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    width: 140px;
+    font-size: 13px;
+    font-family: arial,sans-serif;
+    color: #5F6368;
+    margin: 5px 7px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    text-align: center;
+    cursor:default;
+   
+}
+#ramdon-search:hover {
+    border: 1px solid rgb(165, 165, 165);;
+    border-radius: 4px;
+}
+
+/*Footer_section*/
+
+#footer {
+    position: absolute;
+    background-color: #f2f2f2;
+    border: 1px solid rgb(170, 170, 170);
+    display: grid;
+    grid-template-columns: 100px 100px 150px auto 90px 90px 90px;
+    grid-template-rows: 40px;
+    line-height: 40px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    grid-template-areas: 
+    "advertising business howsearch . privacy terms settings";
+}
+a {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 13px;
+    line-height: 24px;
+    font-family: arial,sans-serif;
+}
+
+#advertising {
+   grid-area: advertising;
+   justify-self: center;
+   align-self: center;
+}
+
+#business {
+   grid-area: business;
+   justify-self: center;
+   align-self: center;
+}
+#howsearch {
+   grid-area: howsearch;
+   justify-self: center;
+   align-self: center;
+   
+}
+#privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+#terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+#settings {
+    grid-area: settings;
+   justify-self: center;
+   align-self: center;
+   
+}
+    </style>
+</head> 
+<body>
+    <div id="navbar">
+        <a hrf="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header" id="about">About</a>
+        <a hrf="https://store.google.com/GB/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB" id="store">Store</a>
+        <a hrf="https://www.google.com/intl/en-GB/gmail/about/" id="gmail">Gmail</a>
+        <a hrf="https://www.google.co.uk/imghp?hl=en&tab=wi&ogbl" id="images">Images</a>
+        <a hrf="#" id="menu"><img src=C:\Users\PC\TOP\google-homepage-\app.png height="30px" width="33px"></a>
+        <button id="sign-in">Sign In</button>
+    </div>
+    <div id="main">
+        <a href="#" id="logo"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></a>
+        <input type="text" id="search" placeholder="Search or enter URL"></input>
+        <div id="flexbox">
+            <button id="google-search">Google Search</button><button id="ramdon-search">I'm Feeling lucky</button> 
+        </div>      
+    </div>
+    <div id="footer">
+            <a hrf="https://ads.google.com/intl/en_uk/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" id="advertising">Advertising</a>
+            <a hrf="https://www.google.co.uk/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none" id="business">Business</a>
+            <a hrf="https://www.google.com/search/howsearchworks/?fg=1" id="howsearch">How Search works</a>
+            <a hrf="https://policies.google.com/privacy?fg=1" id="privacy">Privacy</a>
+            <a hrf="https://policies.google.com/terms?fg=1" id="terms">Terms</a>
+            <a hrf="https://www.google.co.uk/preferences?hl=en" id="settings">Settings</a>
+    </div>
+</body>
+</html>
